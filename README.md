@@ -1,13 +1,5 @@
 ````markdown
----
-title: "⚡ UV — The Blazing-Fast Python Project Manager"
-description: "UV is a modern, lightning-fast Python package and dependency manager that combines the best of Poetry, pip, and pyenv into one tool."
-date: 2025-10-19
-cover_image: "https://i.ibb.co/L89Yf0R/image.png"
-tags: ["Python", "Dependency Management", "Poetry", "UV", "Development"]
----
-
-![UV - The Blazing-Fast Python Project Manager Cover Image](https://i.ibb.co/L89Yf0R/image.png)
+![UV - The Blazing-Fast Python Project Manager Cover Image](cover_image.png)
 
 # ⚡ UV — The Blazing-Fast Python Project Manager
 
@@ -17,7 +9,7 @@ tags: ["Python", "Dependency Management", "Poetry", "UV", "Development"]
 
 ## 🚀 Introduction
 
-Meet **UV**, the new powerhouse in Python project management.  
+Meet **UV**, the new powerhouse in Python project management.
 Forget the days of juggling `poetry`, `requirements.txt`, and `pyenv` — **UV does it all**, and it does it _blazingly fast_.
 
 In this guide, you'll learn how to:
@@ -33,11 +25,11 @@ In this guide, you'll learn how to:
 
 ## 🧩 Installation
 
-You can install UV in several ways — via **curl**, **pip**, or **PowerShell** (for Windows).  
+You can install UV in several ways — via **curl**, **pip**, or **PowerShell** (for Windows).
 Here’s an example using **curl**:
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
 ```
 ````
 
@@ -116,17 +108,17 @@ uv run python --version
 
 To upgrade your project to a newer Python version (e.g., 3.14):
 
-1. Edit your `pyproject.toml`:
+1.  Edit your `pyproject.toml`:
 
-   ```toml
-   requires-python = ">=3.14"
-   ```
+    ```toml
+    requires-python = ">=3.14"
+    ```
 
-2. Sync the environment:
+2.  Sync the environment:
 
-   ```bash
-   uv sync
-   ```
+    ```bash
+    uv sync
+    ```
 
 UV will automatically:
 
@@ -188,7 +180,11 @@ Once you try it, it might just become your favorite Python tool.
 
 ---
 
-> 🧡 Found this useful? Star ⭐ the repo and happy coding!
+> 🧡 Found this useful? Star ⭐ the repo and happy coding\!
+
+```
+
+```
 
 ```
 
