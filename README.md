@@ -1,7 +1,6 @@
 <div align="center">
   <h1>⚡ UV — The Blazing-Fast Python Project Manager</h1>
   <p>🚀 A blazing-fast, modern Python package and dependency manager that combines the best of Poetry, pip, and pyenv — all in one tool.</p>
-
 </div>
 <br />
 
@@ -114,9 +113,10 @@ To upgrade to Python 3.14:
    ```
 
 2. Sync the environment:
-   ```bash
-   uv sync
-   ```
+
+```bash
+uv sync
+```
 
 ---
 
@@ -165,20 +165,3 @@ With **UV**, you can:
 Once you try it, it might just become your favorite Python tool.
 
 > 🧡 Found this useful? Star ⭐ the repo and happy coding!
-
----
-
-## ⚙️ Tech Stack (for this project)
-
-- 🐍 Python 3.8+
-- 📦 UV (Dependency & Environment Manager)
-- 🧪 Pytest (for testing)
-- 🪶 TOML Configuration
-- 💾 SQLite (default lightweight database)
-- 🧰 Git + GitHub for version control
-
----
-
-## 📜 License
-
-Licensed under the [MIT License](./LICENSE).
