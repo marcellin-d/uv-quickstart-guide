@@ -1,39 +1,46 @@
-````markdown
-![UV - The Blazing-Fast Python Project Manager Cover Image](cover_image.png)
+<div align="center">
+  <h1>⚡ UV — The Blazing-Fast Python Project Manager</h1>
+  <p>🚀 A blazing-fast, modern Python package and dependency manager that combines the best of Poetry, pip, and pyenv — all in one tool.</p>
 
-# ⚡ UV — The Blazing-Fast Python Project Manager
+[![GitHub Repo stars](https://img.shields.io/github/stars/marcellin-d/uv?style=flat-square&color=yellow)](https://github.com/marcellin-d/uv/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/marcellin-d/uv?style=flat-square)](https://github.com/marcellin-d/uv/network/members)
+[![GitHub last commit](https://img.shields.io/github/last-commit/marcellin-d/uv?style=flat-square&color=brightgreen)](https://github.com/marcellin-d/uv/commits/main)
+[![License](https://img.shields.io/github/license/marcellin-d/uv?style=flat-square)](https://github.com/marcellin-d/uv/blob/main/LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square)](https://www.python.org/)
 
-> **One tool to rule them all** — UV is a modern, lightning-fast Python package and dependency manager that combines the best of Poetry, pip, and pyenv into a single tool.
+</div>
+<br />
+
+<img width="100%" alt="UV Cover Image" src="./cover_image.png">
 
 ---
 
 ## 🚀 Introduction
 
-Meet **UV**, the new powerhouse in Python project management.
+Meet **UV**, the new powerhouse in Python project management.  
 Forget the days of juggling `poetry`, `requirements.txt`, and `pyenv` — **UV does it all**, and it does it _blazingly fast_.
 
-In this guide, you'll learn how to:
+With UV, you can:
 
-- Install UV
-- Initialize and manage a Python project
-- Add dependencies and dev dependencies
-- Manage Python versions effortlessly
+- Initialize and manage Python projects effortlessly
+- Add, lock, and sync dependencies instantly
+- Manage multiple Python versions
 - Run commands in isolated environments
-- Enjoy a seamless, cross-platform workflow
+- Enjoy unmatched speed and simplicity
 
 ---
 
 ## 🧩 Installation
 
 You can install UV in several ways — via **curl**, **pip**, or **PowerShell** (for Windows).
+
 Here’s an example using **curl**:
 
 ```bash
-curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-````
 
-Once installed, confirm with:
+Once installed, verify with:
 
 ```bash
 uv --version
@@ -49,27 +56,25 @@ To create a new project, simply run:
 uv init
 ```
 
-This will generate a `pyproject.toml` file — a clean and organized configuration that includes:
+This will generate a `pyproject.toml` file that includes:
 
 - Project metadata
 - Dependencies
 - Python version
 
-By default, UV might select an older Python version (e.g., 3.8), but you can easily update it (see below 👇).
+You can then edit or sync your environment as needed.
 
 ---
 
 ## 📦 Adding Dependencies
 
-Adding packages is seamless:
+Adding packages is effortless:
 
 ```bash
 uv add typer
 ```
 
-You’ll immediately see `typer` listed under your dependencies in the `pyproject.toml` file.
-
-To add **development dependencies**, just use the `--dev` flag:
+To add development dependencies, use the `--dev` flag:
 
 ```bash
 uv add pytest --dev
@@ -79,26 +84,26 @@ uv add pytest --dev
 
 ## 🧪 Running Commands
 
-Let’s create a simple test setup:
+Let’s set up a simple test:
 
 ```bash
 mkdir tests
 echo "def test_main(): assert True" > tests/test_main.py
 ```
 
-Run your tests directly inside UV’s virtual environment:
+Then run your tests inside UV’s virtual environment:
 
 ```bash
 uv run pytest
 ```
 
-✨ **Note:** UV automatically creates a virtual environment (`.venv`) and manages dependencies for you.
+✨ **Note:** UV automatically creates and manages a `.venv` for you.
 
 ---
 
 ## 🐍 Managing Python Versions
 
-UV can install and switch Python versions effortlessly.
+UV can install and switch between Python versions seamlessly.
 
 Check your current version:
 
@@ -106,58 +111,45 @@ Check your current version:
 uv run python --version
 ```
 
-To upgrade your project to a newer Python version (e.g., 3.14):
+To upgrade to Python 3.14:
 
-1.  Edit your `pyproject.toml`:
+1. Edit your `pyproject.toml`:
 
-    ```toml
-    requires-python = ">=3.14"
-    ```
+   ```toml
+   requires-python = ">=3.14"
+   ```
 
-2.  Sync the environment:
-
-    ```bash
-    uv sync
-    ```
-
-UV will automatically:
-
-- Install Python 3.14
-- Update your virtual environment
-- Sync dependencies and lock files
+2. Sync the environment:
+   ```bash
+   uv sync
+   ```
 
 ---
 
-## ⚡ Speed Test
+## ⚡ Performance
 
-UV is _incredibly fast_.
-You can install heavy hitters like **FastAPI**, **Jupyter**, and **Pandas** in just seconds:
+UV is _incredibly fast_.  
+You can install large packages like **FastAPI**, **Jupyter**, and **Pandas** in seconds:
 
 ```bash
 uv add fastapi jupyter pandas
 ```
 
-Everything installs, resolves, and locks in under two seconds. 🔥
-
-You can even launch Jupyter directly:
-
-```bash
-uv run jupyter lab
-```
+Everything installs, resolves, and locks in under **2 seconds**. 🔥
 
 ---
 
 ## 🧰 Using `uvx` (Standalone Tools)
 
-Need to run a one-off tool like **Ruff** for linting or formatting?
-No need to install it in your project — use **`uvx`**:
+Need to run a one-off tool like **Ruff** for linting or formatting?  
+No need to install it globally — just use `uvx`:
 
 ```bash
 uvx ruff check
 uvx ruff format
 ```
 
-`uvx` runs tools in a completely **isolated environment**, leaving your project dependencies untouched.
+It runs tools in a **fully isolated environment** without touching your project dependencies.
 
 ---
 
@@ -165,27 +157,34 @@ uvx ruff format
 
 With **UV**, you can:
 
-- ✅ Initialize and manage Python projects
-- ✅ Add, lock, and sync dependencies instantly
-- ✅ Manage Python versions effortlessly
-- ✅ Run commands and tools in isolated environments
+- ✅ Initialize and manage projects
+- ✅ Add & sync dependencies instantly
+- ✅ Manage Python versions easily
+- ✅ Run isolated environments
 - ✅ Enjoy unmatched speed and simplicity
 
 ---
 
 ## 💬 Conclusion
 
-**UV** is redefining Python project management — clean, fast, and powerful.
+**UV** redefines Python project management — it’s clean, fast, and powerful.  
 Once you try it, it might just become your favorite Python tool.
+
+> 🧡 Found this useful? Star ⭐ the repo and happy coding!
 
 ---
 
-> 🧡 Found this useful? Star ⭐ the repo and happy coding\!
+## ⚙️ Tech Stack (for this project)
 
-```
+- 🐍 Python 3.8+
+- 📦 UV (Dependency & Environment Manager)
+- 🧪 Pytest (for testing)
+- 🪶 TOML Configuration
+- 💾 SQLite (default lightweight database)
+- 🧰 Git + GitHub for version control
 
-```
+---
 
-```
+## 📜 License
 
-```
+Licensed under the [MIT License](./LICENSE).
