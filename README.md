@@ -1,5 +1,8 @@
 ---
 
+````markdown
+![UV - The Blazing-Fast Python Project Manager Cover Image](https://i.ibb.co/L89Yf0R/image.png)
+
 # ⚡ UV — The Blazing-Fast Python Project Manager
 
 > **One tool to rule them all** — UV is a modern, lightning-fast Python package and dependency manager that combines the best of Poetry, pip, and pyenv into a single tool.
@@ -28,8 +31,10 @@ You can install UV in several ways — via **curl**, **pip**, or **PowerShell** 
 Here’s an example using **curl**:
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
 ```
+
+````
 
 Once installed, confirm with:
 
@@ -106,17 +111,17 @@ uv run python --version
 
 To upgrade your project to a newer Python version (e.g., 3.14):
 
-1. Edit your `pyproject.toml`:
+1.  Edit your `pyproject.toml`:
 
-```toml
-requires-python = ">=3.14"
-```
+    ```toml
+    requires-python = ">=3.14"
+    ```
 
-2. Sync the environment:
+2.  Sync the environment:
 
-```bash
-uv sync
-```
+    ```bash
+    uv sync
+    ```
 
 UV will automatically:
 
@@ -163,11 +168,11 @@ uvx ruff format
 
 With **UV**, you can:
 
-✅ Initialize and manage Python projects
-✅ Add, lock, and sync dependencies instantly
-✅ Manage Python versions effortlessly
-✅ Run commands and tools in isolated environments
-✅ Enjoy unmatched speed and simplicity
+- ✅ Initialize and manage Python projects
+- ✅ Add, lock, and sync dependencies instantly
+- ✅ Manage Python versions effortlessly
+- ✅ Run commands and tools in isolated environments
+- ✅ Enjoy unmatched speed and simplicity
 
 ---
 
@@ -178,10 +183,9 @@ Once you try it, it might just become your favorite Python tool.
 
 ---
 
-**📹 Inspired by:** “Meet UV – The Blazing Fast Python Project Manager”
-**Author:** _[Your Name or Channel Here]_
-**License:** MIT
+> 🧡 Found this useful? Star ⭐ the repo and happy coding\!
 
-> 🧡 Found this useful? Star ⭐ the repo and happy coding!
+```
 
----
+```
+````
