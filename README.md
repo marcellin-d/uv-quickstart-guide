@@ -2,12 +2,6 @@
   <h1>⚡ UV — The Blazing-Fast Python Project Manager</h1>
   <p>🚀 A blazing-fast, modern Python package and dependency manager that combines the best of Poetry, pip, and pyenv — all in one tool.</p>
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/marcellin-d/uv?style=flat-square&color=yellow)](https://github.com/marcellin-d/uv/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/marcellin-d/uv?style=flat-square)](https://github.com/marcellin-d/uv/network/members)
-[![GitHub last commit](https://img.shields.io/github/last-commit/marcellin-d/uv?style=flat-square&color=brightgreen)](https://github.com/marcellin-d/uv/commits/main)
-[![License](https://img.shields.io/github/license/marcellin-d/uv?style=flat-square)](https://github.com/marcellin-d/uv/blob/main/LICENSE)
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square)](https://www.python.org/)
-
 </div>
 <br />
 
